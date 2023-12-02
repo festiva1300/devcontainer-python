@@ -1,0 +1,36 @@
+{
+	"name": "python",
+	"dockerComposeFile": "./docker-compose.yaml",
+	"service": "app",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers-contrib/features/aws-cdk:2": {},
+		"ghcr.io/devcontainers-contrib/features/serverless:2": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.flake8",
+				"ms-python.black-formatter",
+				"ms-python.isort",
+				"ms-azuretools.vscode-docker"
+			],
+			"settings": {
+				"black-formatter.args": [
+					"--line-length",
+					"119"
+				],
+				"[python]": {
+					"editor.defaultFormatter": "ms-python.black-formatter",
+					"editor.codeActionsOnSave": {
+						"source.organizeImports": true
+					},
+					"editor.formatOnSave": true
+				}
+			}
+		}
+	}
+}

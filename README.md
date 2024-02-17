@@ -15,6 +15,7 @@ If not installed, I recommend using [rancher desktop](https://rancherdesktop.io/
 
 # How to use
 
-1. clone this repo.
-2. open folder in vscode
-3. open command pallete[F1] and type "Dev Containers: Open Folder in Container"
+1. Clone this repo.
+2. Open folder in vscode
+3. Edit docker-compose.yaml according to your environment.
+4. Open command pallete[F1] and type or select "Dev Containers: Open Folder in Container"
